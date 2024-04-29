@@ -20,7 +20,7 @@
   <img src = "public/doc/demo/foods_page_add.JPG"  alt = "addNewFood">
 
 - **Update Existing Food**
-  <img src = "public/doc/demo/foods_page_add.JPG" alt = "updateExistingFood" >
+  <img src = "public/doc/demo/food_page_updaet.JPG" alt = "updateExistingFood" >
 
 ## Run Locally
 
@@ -86,9 +86,13 @@ Thank You.
 
 ```bash
 First I will iterate the dummyArray one time with Array.forEach() where I will get eachParentItem and indexOfParent.
+
 Then I have to iterate eachParentItem.category by using forEach() inside the eachParentItem scope and will get categoryItem and categoryItemIndex .
+
 Then again, I have iterate categoryItem.menuitems by using forEach() in the categoryItem scope. And In this scope I will get menuItemOfCategoryItem and it’s index name manuIteamCategoryIndex
+
 Then, I have to filter the desire item from eachParentItem.menuItems and search by the manuIteamCategoryIndex.  Then just replace the desire menuItems into desire place where the reference kept accessing by using index.
+
 In Summary in each element first I have to get desire menuItems part under Category  where the reference has kept. Then I just need to filter the respective menu Items from which is exist in the Parent scope and lastly just insert it to the menu items which is under category.
 ```
 
@@ -97,6 +101,10 @@ In Summary in each element first I have to get desire menuItems part under Categ
 
 ## Support
 
-**GitHub:** <a href="https://github.com/SYShopnil/" target="_blank"> SYShopnil GitHub </a>
-**LinkedIn:** <a href="https://www.linkedin.com/in/sadmaney-yeasar/" target="_blank"> SYShopnil GitHub </a>
+**GitHub:** <div>
+<a href="https://github.com/SYShopnil/" target="_blank"> SYShopnil GitHub </a></div>
+
+**LinkedIn:** <div>
+<a href="https://www.linkedin.com/in/sadmaney-yeasar/" target="_blank"> SYShopnil GitHub </a></div>
+
 **Email:** sadmanishopnil@gmail.com
