@@ -16,6 +16,7 @@ import { IFormValues } from "@src/types/root/c-form";
 import { useParams, usePathname, useSearchParams } from "next/navigation";
 import { BtnColorSchema, IButton } from "@src/types/root";
 import { formFieldConfigForUpdatePhase } from "./config";
+import { EDataTestId } from "@src/types/common";
 
 export const CIconWithHandlerButtonContainer = ({
   mode,
@@ -66,7 +67,7 @@ export const CIconWithHandlerButtonContainer = ({
     switch (mode) {
       case EMode.UPDATE: {
         return (
-          <div>
+          <div data-testid={EDataTestId.CIconWithHandlerButtonContainer}>
             <CIconWithHandlerButton
               icon={IconName.MdModeEdit}
               clickHandler={() => setIsModalOpen(!isModalOpen)}

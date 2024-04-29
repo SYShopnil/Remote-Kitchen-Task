@@ -3,10 +3,10 @@
 // External Imports
 import { useState } from "react";
 import Link from "next/link";
-import {  IForm, IFormValues } from "@src/types/root/c-form";
+import { IForm, IFormValues } from "@src/types/root/c-form";
 import { FormField } from "./c-form-field";
 import { Button } from "../button";
-
+import { EDataTestId } from "@src/types/common";
 
 export const CForm = ({
   formTitle,
@@ -50,7 +50,10 @@ export const CForm = ({
   };
 
   return (
-    <form data-testid="form" className={`form grid gap-4 lg:grid-cols-2 p-3`}>
+    <form
+      className={`form grid gap-4 lg:grid-cols-2 p-3`}
+      data-testid={EDataTestId.CForm}
+    >
       {formTitle && (
         <div className="mb-[.5rem] md:mb-[.75rem] col-start-1 col-end-3">
           <h3 className="text-center text-[1.75rem] font-medium leading-[1.3] md:text-[3rem] md:font-bold md:leading-[1.1] capitalize text-secondary">

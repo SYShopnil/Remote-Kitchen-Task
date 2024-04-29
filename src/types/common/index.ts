@@ -8,9 +8,6 @@ export enum EAuth {
 }
 
 export enum EDataTestId {
-  cLoginFormWithSubmit = "cLoginFormWithSubmit",
-  cLogoutContainer = "cLogoutContainer",
-  rUserList = "rUserList",
   SHeaderMain = "SHeaderMain",
   SProductSection = "SProductSection",
   SProfile = "SProfile",
@@ -18,4 +15,9 @@ export enum EDataTestId {
   RSingleProduct = "RSingleProduct",
   RTableBody = "RTableBody",
   SProductCard = "SProductCard",
+  CIconWithHandlerButtonContainer = "CIconWithHandlerButtonContainer",
+  CModal = "CModal",
+  CProductAddSection = "CProductAddSection",
+  CProductSearchBarContainer = "CProductSearchBarContainer",
+  CForm = "CForm",
 }

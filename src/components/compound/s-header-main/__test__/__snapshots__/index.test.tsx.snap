@@ -56,14 +56,5 @@ exports[`When Header Main has rendered Expect render successfully 1`] = `
       </span>
     </a>
   </div>
-  <div
-    class="space-y-4 lg:space-y-2 flex-[1_1_15%] "
-  >
-    <div>
-      <p
-        class="font-bold text-white text-lg"
-      />
-    </div>
-  </div>
 </nav>
 `;

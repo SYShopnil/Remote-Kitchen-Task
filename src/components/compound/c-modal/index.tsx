@@ -1,12 +1,13 @@
 "use client";
+import { EDataTestId } from "@src/types/common";
+import { EMode } from "@src/types/compound/c-icon-with-handler-button-container";
 import { ICModal } from "@src/types/compound/c-modal";
 import { useRef, useEffect } from "react";
 
 export const CModal = ({ children, title, setIsOpen, isOpen }: ICModal) => {
-  // const [isOpen, setIsOpen] = useState(false);
   const modalRef = useRef<HTMLDivElement>(null);
 
-  // this is handling the outside click dissapear function
+  // this is handling the outside click disappear function
   useEffect(() => {
     const handleClickOutside = (event: any) => {
       if (modalRef.current && !modalRef.current.contains(event.target)) {
@@ -32,7 +33,10 @@ export const CModal = ({ children, title, setIsOpen, isOpen }: ICModal) => {
   return (
     <>
       {isOpen && (
-        <div className="fixed z-10 inset-0 overflow-y-auto">
+        <div
+          className="fixed z-10 inset-0 overflow-y-auto"
+          data-testid={EDataTestId.CModal}
+        >
           <div className="flex items-center justify-center min-h-screen p-4">
             <div
               className="fixed inset-0 transition-opacity"

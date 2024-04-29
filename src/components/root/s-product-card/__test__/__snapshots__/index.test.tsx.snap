@@ -2,18 +2,18 @@
 
 exports[`When Product Card rendered  Expect it should render successfully 1`] = `
 <div
-  class="max-h-[33rem] w-[18.75rem] text-center "
+  class="h-auto  w-[100%] md:w-[18.75rem] text-center relative "
   data-testid="SProductCard"
 >
   <div
-    class="rounded-sm flex justify-center items-center"
+    class="rounded-sm flex justify-center items-center w-[100%] lg:w-[18.75rem] min-h-[24rem] "
   >
     <img
       alt="Computer"
       data-nimg="1"
       decoding="async"
       fetchpriority="high"
-      height="350"
+      height="384"
       src="/_next/image?url=%2Fassert%2Fdemo-product.jpg&w=640&q=75"
       srcset="/_next/image?url=%2Fassert%2Fdemo-product.jpg&w=384&q=75 1x, /_next/image?url=%2Fassert%2Fdemo-product.jpg&w=640&q=75 2x"
       style="color: transparent; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
@@ -39,25 +39,66 @@ exports[`When Product Card rendered  Expect it should render successfully 1`] = 
     >
       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
     </p>
-    <div
-      class="flex justify-center items-center"
-    >
-      <a
-        href="/dashboard/products/1"
-        target="_self"
-      >
-        <span
-          class="flex justify-center items-center  "
+  </div>
+  <div
+    class=" absolute top-[3%] right-[10%] flex justify-evenly w-[5rem] bg-[#7F4D4F] p-2 rounded-md"
+  >
+    <div>
+      <div>
+        <div
+          data-testid="CIconWithHandlerButtonContainer"
         >
-          <span
-            class="text-base md:text-base_2  flex justify-center items-center px-[1rem] py-[0.5rem] rounded-[0.563rem] w-[100%] h-[100%] bg-[#EBF5EC] hover:bg-[#7F4D4F]  duration-[0.5s] text-[#7F4D4F] hover:text-[#EBF5EC]   border-[0.063rem] hover:border-[#EBF5EC] border-[#7F4D4F]   "
+          <button
+            class="bg-white"
           >
-            <span>
-              View Details
-            </span>
-          </span>
-        </span>
-      </a>
+            <svg
+              fill="7F4D4F"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04a.996.996 0 0 0 0-1.41l-2.34-2.34a.996.996 0 0 0-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
+              />
+            </svg>
+          </button>
+          <div>
+            <div />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div>
+        <button
+          class="bg-white"
+        >
+          <svg
+            fill="7F4D4F"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+            />
+          </svg>
+        </button>
+      </div>
     </div>
   </div>
 </div>

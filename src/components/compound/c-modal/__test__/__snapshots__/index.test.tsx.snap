@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`When Modal has rendered Expect it renders successfully 1`] = `
+<div
+  class="fixed z-10 inset-0 overflow-y-auto"
+  data-testid="CModal"
+>
+  <div
+    class="flex items-center justify-center min-h-screen p-4"
+  >
+    <div
+      aria-hidden="true"
+      class="fixed inset-0 transition-opacity"
+    >
+      <div
+        class="absolute inset-0 bg-black opacity-50"
+      />
+    </div>
+    <div
+      aria-labelledby="modal-title"
+      aria-modal="true"
+      class="bg-white rounded-lg overflow-hidden transform transition-all max-w-lg w-full"
+      role="dialog"
+    >
+      <div
+        class="p-4"
+      >
+        <h2
+          class="text-xl font-bold mb-4 "
+          id="modal-title"
+        >
+          For Test
+        </h2>
+        <div
+          class="text-left"
+        >
+          <h1>
+            Hello world
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -5,3 +5,4 @@ export { SProductCard } from "./s-product-card";
 export { SLoading } from "./s-loading";
 export { CIconWithHandlerButton } from "./c-icon-with-handler-button";
 export { CForm } from "./c-form";
+export { SProductSectionSkeleton } from "./s-product-section-skleton/";

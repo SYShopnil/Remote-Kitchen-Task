@@ -9,6 +9,7 @@ import { addNewFood } from "@root/lib/product-handler";
 
 import { useSearchParams } from "next/navigation";
 import { formFieldConfig } from "./config";
+import { EDataTestId } from "@src/types/common";
 
 export const CProductAddSection = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -31,7 +32,7 @@ export const CProductAddSection = () => {
     }
   };
   return (
-    <div>
+    <div data-testid={EDataTestId.CProductAddSection}>
       <div>
         <CModal
           isOpen={isModalOpen}
