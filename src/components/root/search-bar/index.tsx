@@ -10,6 +10,10 @@ export const CSearchBar = ({
 }: ICSearchBar) => {
   const [searchInput, setSearchInput] = useState("");
 
+  // when enter button will be press then auto the search action will be fire
+  const keyDownHandlerOfSearch = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    e.key == "Enter" && setSearchInputProps(searchInput);
+  };
   return (
     <div className={styles["search-container"]}>
       <input
@@ -17,6 +21,7 @@ export const CSearchBar = ({
         className={styles["search-input"]}
         placeholder="Search..."
         onChange={(e) => setSearchInput(e.target.value)}
+        onKeyDown={keyDownHandlerOfSearch}
       />
       <RiSearchLine
         className={styles["search-icon"]}

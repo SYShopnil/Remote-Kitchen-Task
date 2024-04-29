@@ -185,6 +185,7 @@ export async function getIndividualProductById(
 
 export async function deleteFoodFromListById({
   foodId,
+  existingSearchParams,
 }: IDeleteFoodFromListById): Promise<IDeleteFoodFromListByIdReturn> {
   let setRedirectUrl = "";
   try {
@@ -200,7 +201,9 @@ export async function deleteFoodFromListById({
         await fs.readFile(process.cwd() + "/public/db/foods.db.json", "utf8");
 
         await reUpdateNewFoodListInJSONStore(deleteProductFromList);
-        setRedirectUrl = `/foods`;
+        setRedirectUrl = `/foods${
+          existingSearchParams && existingSearchParams
+        }`;
       } else {
         return {
           message: "No Product Found!!",

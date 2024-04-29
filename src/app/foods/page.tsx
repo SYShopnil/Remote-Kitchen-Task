@@ -1,7 +1,7 @@
 import { configProductDataLimit } from "@root/config";
 import { getAllProducts } from "@root/lib/product-handler";
 import { SProductSection } from "@src/components/compound";
-import { SLoading, SProductSectionSkeleton } from "@src/components/root";
+import { SProductSectionSkeleton } from "@src/components/root";
 import { IFoodPage } from "@src/types/app/foods";
 import { IGetAllProductsReturn } from "@src/types/lib/product-handler";
 import { Suspense } from "react";
@@ -16,10 +16,10 @@ export default async function ProductsPage({ searchParams }: IFoodPage) {
       searchInput,
     });
   return (
-    <section>
+    <>
       <Suspense fallback={<SProductSectionSkeleton />}>
         <SProductSection requestForGetAllProduct={requestForGetAllProduct} />
       </Suspense>
-    </section>
+    </>
   );
 }

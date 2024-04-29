@@ -11,9 +11,11 @@ export const CPaginationTrack = ({
   totalPage,
 }: ICPaginationTrack) => {
   const searchParams = useSearchParams();
+
   //have to show total needed page as linkable option
   const [redirectUrlParamsWithoutPageNo, setRedirectUrlParamsWithoutPageNo] =
     useState("");
+
   useEffect(() => {
     const currentSearchParams = searchParams.toString();
     const searchAllOtherSearchParamsExceptPage = currentSearchParams

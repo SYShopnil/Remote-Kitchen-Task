@@ -1,6 +1,5 @@
 "use client";
 import { EDataTestId } from "@src/types/common";
-import { EMode } from "@src/types/compound/c-icon-with-handler-button-container";
 import { ICModal } from "@src/types/compound/c-modal";
 import { useRef, useEffect } from "react";
 

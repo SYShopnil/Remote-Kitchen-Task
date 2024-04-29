@@ -9,8 +9,10 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Remote Kitchen Task",
   description: "This is a job task of Remote Kitchen",
+  applicationName: "Remote Kitchen Task",
 };
-export const fetchCache = "force-no-store";
+
+// export const fetchCache = "force-no-store";
 export default function RootLayout({
   children,
 }: {
@@ -19,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} bg-[#F8FBFF]`}>
-        {/* container class */}
+        {/* container main */}
         <header className={`flex justify-center items-center bg-[#7F4D4F]`}>
           <div className={`container`}>
             <SHeaderMain />

@@ -35,7 +35,9 @@ export interface IGetAllProducts {
   searchInput: string;
 }
 
-export interface IDeleteFoodFromListById extends Pick<IProduct, "foodId"> {}
+export interface IDeleteFoodFromListById extends Pick<IProduct, "foodId"> {
+  existingSearchParams: string;
+}
 
 export interface FileUploadDefault {
   fileName: string;

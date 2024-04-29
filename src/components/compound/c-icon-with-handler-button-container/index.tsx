@@ -13,7 +13,7 @@ import { IconName } from "@src/types/root/_icon";
 import React, { useState } from "react";
 import { CModal } from "../c-modal";
 import { IFormValues } from "@src/types/root/c-form";
-import { useParams, usePathname, useSearchParams } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 import { BtnColorSchema, IButton } from "@src/types/root";
 import { formFieldConfigForUpdatePhase } from "./config";
 import { EDataTestId } from "@src/types/common";
@@ -36,7 +36,6 @@ export const CIconWithHandlerButtonContainer = ({
     try {
       const search = searchParams.toString();
       const redirectPath = `${pathName}${search && `?${search}`}`;
-      console.log(redirectPath);
       const {
         payload: { isUpdate },
       } = await updateExistingFoodDataFromMainList(redirectPath, formValues);
@@ -47,10 +46,13 @@ export const CIconWithHandlerButtonContainer = ({
 
   const deleteHandler = async () => {
     try {
+      const existingSearchParams = searchParams.toString()
+        ? "?" + searchParams.toString()
+        : "";
       const { message } = await deleteFoodFromListById({
         foodId,
+        existingSearchParams,
       });
-      console.log(message);
     } catch (err) {
       console.log(err);
     }

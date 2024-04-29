@@ -32,7 +32,7 @@ export const CSingleFileUploader = ({
   };
 
   return (
-    <div>
+    <>
       <div className="mb-3">
         <input
           onChange={handleChange}
@@ -45,10 +45,10 @@ export const CSingleFileUploader = ({
       {fileBase64 && (
         <img
           src={fileBase64}
-          alt="image"
+          alt="upload_image"
           className={`${singleFileUploaderStyle.imageSize}`}
         />
       )}
-    </div>
+    </>
   );
 };

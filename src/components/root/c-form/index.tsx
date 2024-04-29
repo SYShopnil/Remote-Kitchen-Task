@@ -18,7 +18,6 @@ export const CForm = ({
 }: IForm) => {
   const [formValues, setFormValues] = useState<IFormValues>(initialValue);
   const [formErrors, setFormErrors] = useState<IFormValues>(initialValue);
-  console.log(formValues);
   const handleFormChange = (
     e: React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement | any>
   ) => {
