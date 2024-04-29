@@ -105,6 +105,6 @@ In Summary in each element first I have to get desire menuItems part under Categ
 <a targe ="_blank" href="https://github.com/SYShopnil/" target="_blank"> SYShopnil GitHub </a></div>
 
 **LinkedIn:** <div>
-<a targe ="_blank" href="https://www.linkedin.com/in/sadmaney-yeasar/" target="\_blank"> SYShopnil GitHub </a></div>
+<a targe ="_blank" href="https://www.linkedin.com/in/sadmaney-yeasar/" target="\_blank"> sadmaney-yeasar </a></div>
 
 **Email:** sadmanishopnil@gmail.com
