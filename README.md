@@ -11,16 +11,16 @@
 ## Demo
 
 - **Use Case Diagram**
-  <img src = "public/doc/use_case_diagrame.png"  >
+  <img src = "public/doc/use_case_diagrame.png" alt = "useCaseDiagram" >
 
 - **Foods Page Read**
-  <img src = "public/doc/demo/foods_page_read.png"  >
+  <img src = "public/doc/demo/foods_page_read.png"  alt = "foodPageReadMode" >
 
 - **Add New Food**
-  <img src = "public/doc/demo/foods_page_add.JPG"  >
+  <img src = "public/doc/demo/foods_page_add.JPG"  alt = "addNewFood">
 
 - **Update Existing Food**
-  <img src = "public/doc/demo/foods_page_add.JPG"  >
+  <img src = "public/doc/demo/foods_page_add.JPG" alt = "updateExistingFood" >
 
 ## Run Locally
 
@@ -55,9 +55,9 @@ Start the Test
   npm run test
 ```
 
-## Task 1
+## Task 2
 
-**Question: 1. A project titled, “Alex’s Kitchen” from team "Remote Kitchen" uses Git for version control. Several developers are contributing, with each working on their own branch. The team follows certain conventions. Suppose you need to submit a hotfix. How would you name your branch? After finalizing your work in your designated branch, detail the steps you would take to create a PR and merge it with the production branch.**
+**Question: 2. A project titled, “Alex’s Kitchen” from team "Remote Kitchen" uses Git for version control. Several developers are contributing, with each working on their own branch. The team follows certain conventions. Suppose you need to submit a hotfix. How would you name your branch? After finalizing your work in your designated branch, detail the steps you would take to create a PR and merge it with the production branch.**
 
 ```bash
 I am description the process step by step.
@@ -77,6 +77,23 @@ Step 6 (Merge to master for production): After successfully complete all feature
 Thank You.
 
 ```
+
+## Task 1
+
+**Question: 1. A project titled, “Alex’s Kitchen” from team "Remote Kitchen" uses Git for version control. Several developers are contributing, with each working on their own branch. The team follows certain conventions. Suppose you need to submit a hotfix. How would you name your branch? After finalizing your work in your designated branch, detail the steps you would take to create a PR and merge it with the production branch.**
+
+**Answer**
+
+```bash
+First I will iterate the dummyArray one time with Array.forEach() where I will get eachParentItem and indexOfParent.
+Then I have to iterate eachParentItem.category by using forEach() inside the eachParentItem scope and will get categoryItem and categoryItemIndex .
+Then again, I have iterate categoryItem.menuitems by using forEach() in the categoryItem scope. And In this scope I will get menuItemOfCategoryItem and it’s index name manuIteamCategoryIndex
+Then, I have to filter the desire item from eachParentItem.menuItems and search by the manuIteamCategoryIndex.  Then just replace the desire menuItems into desire place where the reference kept accessing by using index.
+In Summary in each element first I have to get desire menuItems part under Category  where the reference has kept. Then I just need to filter the respective menu Items from which is exist in the Parent scope and lastly just insert it to the menu items which is under category.
+```
+
+-**Code of Task 2**
+<img src = "public/other-tasks/task-2.png" alt = "Task_2_Answer" >
 
 ## Support
 
